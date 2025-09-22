@@ -25,7 +25,7 @@ scheduler.start()
 
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://mvz326wrjjymlj5c:phxyqj7sdheyfbyd@mwgmw3rs78pvwk4e.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/favtdlov739evrgn'  # SQLite
+app.config['SQLALCHEMY_DATABASE_URI'] = 'redacted'  # SQLite
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'your_secret_key'
@@ -34,7 +34,7 @@ app.config['MAIL_SERVER'] = 'smtp.gmail.com'  # Your SMTP server address
 app.config['MAIL_PORT'] = 587  # Port for SMTP (usually 587 for TLS)
 app.config['MAIL_USE_TLS'] = True  # Enable TLS
 app.config['MAIL_USERNAME'] = 'simride529@gmail.com' 
-app.config['MAIL_PASSWORD'] = 'kcxd goaj qhlu vxdw'
+app.config['MAIL_PASSWORD'] = 'redacted'
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 mail = Mail(app)
